@@ -1,5 +1,9 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import './globals.css'
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
+import ThemeToggle from '@/components/ThemeToggle'
+import Providers from '@/components/Providers'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,15 +22,16 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <header>
-          <nav>
-            <a href="/">Home</a> | <a href="/about">About</a> |{' '} <a href="/projects">Projects</a> | <a href="/contact">Contact</a>
-          </nav>
-        </header>
-          <main>{children}</main>
-          <footer>© 2025 Naoto Abe. All rights reserved.</footer>
+        <Providers>
+          <Navbar />
+          <ThemeToggle />
+          <main className="container mx-auto px-4 md:px-6">
+            {children}
+          </main>
+          <Footer />
+        </Providers>
       </body>
     </html>
   );
