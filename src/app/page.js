@@ -2,8 +2,13 @@ import localImage from "@/assets/profile.png";
 import profileTokyo from "@/assets/profile-tokyo.png";
 import Image from "next/image";
 import Projects from './projects/page'
+import ProjectCard from '@/components/ProjectCard'
+import { projects } from '@/data/projects'
+import Link from 'next/link'
 
 export default function Home() {
+  const featuredProjects = projects.slice(0, 2) // Show first 2 projects
+
   return (
     <div className="flex flex-col gap-16 pt-24 md:pt-28">
       {/* Hero Section */}
@@ -45,9 +50,22 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Projects Section */}
+      {/* Featured Projects Section */}
       <section className="w-full">
-        <Projects />
+        <h2 className="text-3xl font-bold mb-8 text-center">Featured Work</h2>
+        <div className="flex flex-col gap-8">
+          {featuredProjects.map(project => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
+        </div>
+        <div className="text-center mt-8">
+          <Link 
+            href="/projects"
+            className="inline-block px-6 py-3 border border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
+          >
+            View All Projects
+          </Link>
+        </div>
       </section>
     </div>
   );

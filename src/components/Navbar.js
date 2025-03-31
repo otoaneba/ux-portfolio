@@ -18,8 +18,8 @@ const Navbar = () => {
       <nav className="container mx-auto px-4 md:px-6 py-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link href="/" className="text-xl font-bold">
-            Naoto
+          <Link href="/" className="text-xl">
+            <span className="font-custom-simpleLetter text-5xl">Naoto</span>
           </Link>
 
           {/* Desktop Navigation */}

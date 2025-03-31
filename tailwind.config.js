@@ -29,6 +29,9 @@ module.exports = {
           700: '#7e22ce',
         }
       },
+      fontFamily: {
+        'custom-simpleLetter': ['simpleLetter', 'sans-serif'],
+      },
     },
   },
   plugins: [],
