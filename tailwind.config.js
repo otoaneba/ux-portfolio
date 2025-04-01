@@ -31,6 +31,7 @@ module.exports = {
       },
       fontFamily: {
         'custom-simpleLetter': ['simpleLetter', 'sans-serif'],
+        'custom-study': ['Zerfallen', 'serif'],
       },
     },
   },

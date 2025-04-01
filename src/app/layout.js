@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
         <Providers>
           <Navbar />
           <ThemeToggle />
-          <main className="container mx-auto px-4 md:px-6">
+          <main className="mx-auto px-1 md:px-0">
             {children}
           </main>
           <Footer />

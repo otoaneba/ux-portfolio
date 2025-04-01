@@ -1,9 +1,9 @@
 export const projects = [
   {
     id: 1,
-    title: "Mom-Friendly Authentication System",
+    title: "Rethinking Onboarding for Busy Parents",
     subtitle: "UX Research & Design Case Study",
-    description: "Designing an intuitive authentication system for busy moms, focusing on simplicity and multi-device accessibility.",
+    description: "Designing an intuitive authentication system for busy parents, focusing on simplicity and multi-device accessibility.",
     thumbnail: "/images/projects/auth-system-thumb.png", // You'll need to add this image
     tags: ["UX Research", "User Testing", "Prototyping", "Authentication"],
     highlights: [
@@ -13,8 +13,9 @@ export const projects = [
       "Improved user feedback and confirmation systems"
     ],
     problem: {
-      statement: "Moms with young kids face inconveniences when creating accounts or logging into apps, needing a simple, secure, and quick process to manage tasks across devices.",
-      need: "A signup and login feature that's easy, integrates with familiar accounts (e.g., Google), and ensures multi-device access without hassle, tailored to busy moms."
+      title: "Understanding the Pain Points of Parent-Friendly Onboarding",
+      statement: "How can I improve onboarding for a to-do app for parents with young kids?", // Parents (especially moms) with young kids have their cognitive resources stretched thin on a daily basis, needing a simple, secure, and quick process to manage tasks across devices.
+      need: "I aimed to identify the pain points parents encounter during the signup and login process, then design a more intuitive onboarding experience tailored for parents with young children. I needed to find out what pain points parents face during the signup and login process, and design a more intuitive onboarding experience for parents with young kids."
     },
     painPoints: [
       {
@@ -92,6 +93,18 @@ export const projects = [
         "Consistent UI (drop shadows, no borders)",
         "Logout under hamburger menu only"
       ]
+    },
+    overview: {
+      description: "As part of UCLA Extension’s UX program, I saw this project as an opportunity to conduct user research, identify pain points, and design a more intuitive onboarding experience for parents with young kids. By focusing on user needs, I explored ways to simplify account creation and login, reducing friction and enhancing engagement.",
+      additionalInfo: "Mobile - iOS and Android.",
+      role: "UX Researcher & Designer",
+      timeline: "2024",
     }
   }
 ] 
+
+
+// description: "I was the Executive Design Director of the Audience Experience team at Vox Media from 2016-2017. Any surface, on platform or off, where a reader might encounter a story from one of our brands was my responsibility. Success in this role meant collaboration across our platform team, the centralized brand team, as well as each editorial staff and their design groups.",
+// additionalInfo: "Vox has grown into a massive company, and one of my focuses as the Executive Design Director over this group was to improve transparency and communication across the many subdivided design teams at the company, as well as to work alongside the rest of design leadership to create clarity in responsibilities and ownership for each group.",
+// role: "Executive Design Director, 2016-2017",
+// timeline: "2016-2017"
