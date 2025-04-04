@@ -62,6 +62,98 @@ export default function ProjectDetail({ project }) {
           </div>
         </section>
 
+        {/* Discovery and Analysis */}
+        <section className="w-full border-t border-gray-200 dark:border-gray-700 py-16 mb-16">
+          <div className="max-w-4xl mx-auto px-4">
+            <h2 className="text-2xl font-bold mb-12">Discovery and Analysis</h2>
+            
+            {/* Stakeholder Interviews */}
+            <div className="mb-16">
+              <h3 className="text-xl font-semibold mb-4">{project.discovery.stakeholderInterviews.title}</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
+                {project.discovery.stakeholderInterviews.description}
+              </p>
+              <ul className="list-disc pl-6 space-y-2">
+                {project.discovery.stakeholderInterviews.keyFindings.map((finding, i) => (
+                  <li key={i} className="text-gray-600 dark:text-gray-300">{finding}</li>
+                ))}
+              </ul>
+            </div>
+
+            {/* User Personas */}
+            <div className="mb-16">
+              <h3 className="text-xl font-semibold mb-4">{project.discovery.userPersonas.title}</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-6">
+                {project.discovery.userPersonas.description}
+              </p>
+              <div className="grid md:grid-cols-3 gap-6">
+                {project.discovery.userPersonas.personas.map((persona, index) => (
+                  <div key={index} className="border border-gray-200 dark:border-gray-700 rounded-lg p-6">
+                    <h4 className="font-semibold mb-2">{persona.name}</h4>
+                    <p className="text-purple-600 dark:text-purple-400 text-sm mb-3">{persona.role}</p>
+                    <ul className="text-sm space-y-2">
+                      {persona.goals.map((goal, i) => (
+                        <li key={i} className="text-gray-600 dark:text-gray-300">• {goal}</li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Summary of Insights */}
+            <div className="mb-16">
+              <h3 className="text-xl font-semibold mb-4">{project.discovery.insights.title}</h3>
+              <ul className="list-disc pl-6 space-y-2">
+                {project.discovery.insights.findings.map((finding, i) => (
+                  <li key={i} className="text-gray-600 dark:text-gray-300">{finding}</li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Competitor Analysis */}
+            <div>
+              <h3 className="text-xl font-semibold mb-4">{project.discovery.competitorAnalysis.title}</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-6">
+                {project.discovery.competitorAnalysis.description}
+              </p>
+              <div className="grid md:grid-cols-2 gap-6 mb-8">
+                {project.discovery.competitorAnalysis.competitors.map((competitor, index) => (
+                  <div key={index} className="border border-gray-200 dark:border-gray-700 rounded-lg p-6">
+                    <h4 className="font-semibold mb-3">{competitor.name}</h4>
+                    <div className="space-y-4">
+                      <div>
+                        <p className="text-green-600 dark:text-green-400 text-sm mb-2">Strengths</p>
+                        <ul className="text-sm space-y-1">
+                          {competitor.strengths.map((strength, i) => (
+                            <li key={i} className="text-gray-600 dark:text-gray-300">• {strength}</li>
+                          ))}
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="text-red-600 dark:text-red-400 text-sm mb-2">Weaknesses</p>
+                        <ul className="text-sm space-y-1">
+                          {competitor.weaknesses.map((weakness, i) => (
+                            <li key={i} className="text-gray-600 dark:text-gray-300">• {weakness}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <div>
+                <h4 className="font-semibold mb-3">Opportunities</h4>
+                <ul className="list-disc pl-6 space-y-2">
+                  {project.discovery.competitorAnalysis.opportunities.map((opportunity, i) => (
+                    <li key={i} className="text-gray-600 dark:text-gray-300">{opportunity}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Pain Points */}
         <section className="w-full border-t border-gray-200 dark:border-gray-700 py-16 mb-16">
           <div className="max-w-4xl mx-auto px-4">

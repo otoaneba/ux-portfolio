@@ -95,10 +95,84 @@ export const projects = [
       ]
     },
     overview: {
-      description: "As part of UCLA Extension’s UX program, I saw this project as an opportunity to conduct user research, identify pain points, and design a more intuitive onboarding experience for parents with young kids. By focusing on user needs, I explored ways to simplify account creation and login, reducing friction and enhancing engagement.",
+      description: "As part of UCLA Extension's UX program, I saw this project as an opportunity to conduct user research, identify pain points, and design a more intuitive onboarding experience for parents with young kids. By focusing on user needs, I explored ways to simplify account creation and login, reducing friction and enhancing engagement.",
       additionalInfo: "Mobile - iOS and Android.",
       role: "UX Researcher & Designer",
       timeline: "2024",
+    },
+    discovery: {
+      stakeholderInterviews: {
+        title: "Stakeholder Interviews",
+        description: "I conducted interviews with product managers and developers to understand technical constraints and business goals.",
+        keyFindings: [
+          "Need for balance between security and ease of use",
+          "Integration with existing systems is crucial",
+          "User data privacy is a top priority"
+        ]
+      },
+      userPersonas: {
+        title: "User Personas",
+        description: "Through user interviews and surveys, I identified three distinct user personas:",
+        personas: [
+          {
+            name: "Jane Choi",
+            role: "New Mom",
+            goals: [
+              "Quick access to daily tasks",
+              "Share lists with family members",
+              "Minimal learning curve"
+            ]
+          },
+          {
+            name: "Maya Lee",
+            role: "Working Mom of Two",
+            goals: [
+              "Efficient task management",
+              "Cross-device synchronization",
+              "Simple authentication process"
+            ]
+          },
+          {
+            name: "Emma Yamamoto",
+            role: "Stay-at-home Mom of Triplets",
+            goals: [
+              "Password management",
+              "Easy account recovery",
+              "Secure data storage"
+            ]
+          }
+        ]
+      },
+      insights: {
+        title: "Summary of Insights",
+        findings: [
+          "Parents prefer social login options over traditional email/password",
+          "Multi-device access is crucial for managing family tasks",
+          "Security concerns are balanced with convenience needs",
+          "Account sharing between partners is a common requirement"
+        ]
+      },
+      competitorAnalysis: {
+        title: "Competitor Analysis",
+        description: "I analyzed five leading family task management apps to identify patterns and opportunities.",
+        competitors: [
+          {
+            name: "Competitor A",
+            strengths: ["Simple interface", "Quick signup"],
+            weaknesses: ["Limited sharing options", "No password recovery"]
+          },
+          {
+            name: "Competitor B",
+            strengths: ["Strong security", "Multiple login options"],
+            weaknesses: ["Complex onboarding", "Poor cross-device sync"]
+          }
+        ],
+        opportunities: [
+          "Simplified social login integration",
+          "Better account sharing features",
+          "Improved password recovery process"
+        ]
+      }
     }
   }
 ] 
