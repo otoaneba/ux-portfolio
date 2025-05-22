@@ -1,4 +1,3 @@
-import localImage from "@/assets/profile.png";
 import profileTokyo from "@/assets/profile-tokyo.png";
 import Image from "next/image";
 import Projects from './projects/page'

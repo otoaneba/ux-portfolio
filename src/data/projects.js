@@ -173,6 +173,182 @@ export const projects = [
           "Improved password recovery process"
         ]
       }
+    },
+    process: {
+      overview: {
+        title: "The Process",
+        steps: [
+          {
+            title: "Needfinding",
+            points: [
+              "Initial Assumptions",
+              "Interviews",
+              "Competitor Analysis"
+            ]
+          },
+          {
+            title: "Design Alternatives",
+            points: [
+              "Brain Storming",
+              "Empathy map",
+              "Personas",
+              "Journey Maps",
+              "Site Maps"
+            ]
+          },
+          {
+            title: "Prototype",
+            points: [
+              "Low fidelity",
+              "Mid fidelity"
+            ]
+          },
+          {
+            title: "Evaluation",
+            points: [
+              "Qualitative Feedback",
+            ]
+          }
+        ],
+      }
+    },
+    needfinding: {
+      title: "Needfinding",
+      description: "To better understand the challenges parents face during app onboarding, I conducted user research through interviews and competitive analysis.",
+      methods: [
+        {
+          title: "User Interviews",
+          details: "Conducted in-depth interviews with parents to understand their daily routines and pain points with existing apps."
+        },
+        {
+          title: "Competitive Analysis",
+          details: "Analyzed five leading family task management apps to identify patterns and opportunities.",
+          competitors: [
+            {
+              name: "Competitor A",
+              strengths: ["Simple interface", "Quick signup"],
+              weaknesses: ["Limited sharing options", "No password recovery"]
+            },
+            {
+              name: "Competitor B",
+              strengths: ["Strong security", "Multiple login options"],
+              weaknesses: ["Complex onboarding", "Poor cross-device sync"]
+            }
+          ],
+          opportunities: [
+            "Simplified social login integration",
+            "Better account sharing features",
+            "Improved password recovery process"
+          ]
+        }
+      ]
+    },
+    designAlternatives: {
+      title: "Design Alternatives",
+      description: "Based on the research findings, I explored different design solutions through various methods:",
+      methods: [
+        {
+          title: "Brain Storming",
+          details: "Generated multiple ideas and approaches to solve the authentication challenges identified during research."
+        },
+        {
+          title: "Empathy Map",
+          details: "Created empathy maps to better understand user feelings, pain points, and needs during the authentication process."
+        },
+        {
+          title: "Personas",
+          details: "Through user interviews and surveys, I identified three distinct user personas:",
+          personas: [
+            {
+              name: "Jane Choi",
+              role: "New Mom",
+              goals: [
+                "Quick access to daily tasks",
+                "Share lists with family members",
+                "Minimal learning curve"
+              ]
+            },
+            {
+              name: "Maya Lee",
+              role: "Working Mom of Two",
+              goals: [
+                "Efficient task management",
+                "Cross-device synchronization",
+                "Simple authentication process"
+              ]
+            },
+            {
+              name: "Emma Yamamoto",
+              role: "Stay-at-home Mom of Triplets",
+              goals: [
+                "Password management",
+                "Easy account recovery",
+                "Secure data storage"
+              ]
+            }
+          ]
+        },
+        {
+          title: "Journey Maps",
+          details: "Created user journey maps to visualize the authentication flow and identify opportunities for improvement."
+        },
+        {
+          title: "Site Maps",
+          details: "Developed site maps to plan the information architecture and ensure intuitive navigation."
+        }
+      ]
+    },
+    prototype: {
+      title: "Prototype",
+      description: "I created iterative prototypes to test and refine the authentication flow:",
+      methods: [
+        {
+          title: "Low Fidelity",
+          details: "Created paper wireframes and basic digital mockups to quickly test different layout options and user flows."
+        },
+        {
+          title: "Mid Fidelity",
+          details: "Developed interactive prototypes with more detailed UI elements to validate the authentication process."
+        }
+      ]
+    },
+    evaluation: {
+      title: "Evaluation",
+      description: "I conducted user testing sessions to validate the design solutions:",
+      methods: [
+        {
+          title: "Low-Fidelity Testing",
+          details: "Gathered initial feedback from users about the basic layout and flow of the authentication process.",
+          testingTitle: "Low-Fidelity Testing Results",
+          testing: {
+            good: [
+              "Email verification felt standard",
+              "Google signup was simple"
+            ],
+            bad: [
+              "Survey cluttered signup",
+              "Email confirmation timing discouraged users",
+              "Security concerns (no password visibility)"
+            ]
+          }
+        },
+        {
+          title: "Mid-Fidelity Testing",
+          details: "Collected detailed feedback on the interactive prototype with more refined UI elements.",
+          testingTitle: "Mid-Fidelity Testing Results",
+          testing: {
+            good: [
+              "Password visibility toggle helpful",
+              "Social login prominent",
+              "Clear error messages"
+            ],
+            bad: [
+              "Account recovery flow unclear",
+              "Too many steps in email signup"
+            ]
+          }
+        }
+      ]
     }
   }
 ] 
